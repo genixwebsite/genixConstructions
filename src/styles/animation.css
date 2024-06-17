@@ -1,0 +1,181 @@
+.container {
+  text-align: center;
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #02294a;
+  font-family: "Baskervville";
+  font-weight: 600;
+  font-size: 5.25em;
+  padding-top: 40vh;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+#title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: showup 7s 1;
+}
+
+#subtitle {
+  color: #E30B21;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0px;
+  animation: reveal 7s 1;
+}
+
+#subtitle span {
+  margin-left: -22.188rem;
+  animation: slidein 7s 1;
+}
+.liner {
+  font-size: 2.125rem; /* 18px / 16 */
+  color: #999;
+  opacity: 0;
+  animation: fadein 4.25s 1;
+  animation-delay: 2.5s;
+  margin-top: -3.5rem; /* Adjust this value to move the <p> tag closer */
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -50rem;
+  }
+  20% {
+    margin-left: -50rem;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 34rem;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 34rem;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    font-size: 3rem;
+  }
+  #subtitle span {
+    margin-left: -19.75rem; /* 300px / 16 */
+  }
+  @keyframes reveal {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 19.75rem; /* 300px / 16 */
+    }
+    100% {
+      width: 19.75rem; /* 300px / 16 */
+    }
+  }
+  .liner {
+    font-size: 1.75rem; /* Further decrease font size */
+    margin-top: -1.5rem; /* Further adjust top margin */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 2em;
+    padding-top: 40vh;
+  }
+  #subtitle span {
+    margin-left: -12.5rem; /* 200px / 16 */
+  }
+  @keyframes reveal {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 12.5rem; /* 200px / 16 */
+    }
+    100% {
+      width: 12.5rem; /* 200px / 16 */
+    }
+  }
+  .liner {
+    font-size: 1.25rem; /* Further decrease font size */
+    margin-top: -1rem; /* Further adjust top margin */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .loader-container {
+    font-size: 1.5em;
+    padding-top: 40vh;
+  }
+  #subtitle span {
+    margin-left: -12.5rem; /* 120px / 16 */
+  }
+  @keyframes reveal {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 12.5rem; /* 120px / 16 */
+    }
+    100% {
+      width: 12.5rem; /* 120px / 16 */
+    }
+  }
+  .liner {
+    font-size: 1.25rem; /* Further decrease font size */
+    margin-top: -1rem; /* Further adjust top margin */
+  }
+}
