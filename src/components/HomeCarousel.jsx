@@ -6,7 +6,7 @@ import { imageList } from "../constants/carouselImageList";
 const HomeCarousel = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="w-full">
+      <div className="">
         <Carousel
           autoPlay
           infiniteLoop
@@ -14,7 +14,7 @@ const HomeCarousel = () => {
           showThumbs={false}
           showStatus={false}
           showArrows={false}
-          className="w-full h-full"
+          className=""
         >
           {imageList.map((image, index) => (
             <div key={index} className="w-full h-[70vh] overflow-hidden">

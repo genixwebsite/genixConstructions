@@ -8,7 +8,7 @@ const AnimatedText = () => {
       <div id="subtitle">
         <span>Constructions</span>
       </div>
-      <p className="liner">you dream it, we build it.</p>
+      <p className="liner">You dream it, We build it.</p>
     </div>
   );
 };
