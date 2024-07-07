@@ -1,0 +1,93 @@
+.card-container {
+   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center align cards */
+  
+}
+
+.card {
+  width: 225px; /* Keep card width as before */
+  height: 280px; /* Keep card height as before */
+  background: #fff;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-avatar {
+  width: 180px; /* Reduced avatar size */
+  height: 180px; /* Reduced avatar size */
+  background-size:contain;
+background-position: center;
+background-repeat: no-repeat;
+  transition: transform 0.2s ease;
+  margin-bottom: 1rem;
+  
+  
+}
+
+.card-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card-social__item {
+  list-style: none;
+  text-align: center;
+}
+
+.card-social__item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card:hover {
+  box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .card-info {
+  transform: translateY(-5%);
+}
+
+.card:hover .card-social {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.card-social__item svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+  fill: #515f65;
+  cursor: pointer;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card-social__item svg:hover {
+  fill: #232323;
+  transform: scale(1.1);
+}
+
+.card-avatar:hover {
+  transform: scale(1.1);
+}

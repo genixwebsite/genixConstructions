@@ -1,7 +1,5 @@
 // src/First.jsx
-import React from "react";
-import Typical from "react-typical";
-import Navbar from "./Navbar.jsx";
+
 import HomeCarousel from "./HomeCarousel.jsx";
 
 const First = () => {

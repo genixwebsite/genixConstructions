@@ -3,7 +3,7 @@ import "../styles/animation.css";
 
 const AnimatedText = () => {
   return (
-    <div className="container">
+    <div className="maincontainer">
       <div id="title">Genix</div>
       <div id="subtitle">
         <span>Constructions</span>

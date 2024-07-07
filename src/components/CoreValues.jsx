@@ -15,7 +15,7 @@ const CoreValues = () => {
   ];
 
   return (
-    <div className="flex flex-col container py-16 h-auto font-sans">
+    <div className="flex flex-col maincontainer py-16 h-auto font-sans">
       <div className="">
         {/* Core Values Heading */}
         <h1
