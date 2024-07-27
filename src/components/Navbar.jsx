@@ -1,16 +1,37 @@
 // src/Navbar.jsx
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo-bg-removed.png";
 import "../styles/nav.css";
 
 const Navbar = () => {
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#02294A] text-white shadow-lg z-20">
+    <nav
+      className={`fixed top-0 left-0 w-full text-white z-20 transition-colors duration-300 ${
+        isScrolled ? "bg-[#02294A] shadow-lg " : "bg-transparent"
+      }`}
+    >
       <div className="mx-auto px-6 pt-1 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <img src={logo} alt="logo" className="max-w-[3.5em]" />
+          <img src={logo} alt="logo" className=" w-[100px]" />
         </div>
         <ul className="flex space-x-4">
           <li className="nav-item">

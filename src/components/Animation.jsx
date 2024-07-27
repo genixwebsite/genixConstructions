@@ -1,16 +1,23 @@
-
+import { useEffect } from "react";
 import "../styles/animation.css";
+import logo from "../assets/logo-bg-removed.png";
 
-const AnimatedText = () => {
+const Animation = ({ onAnimationEnd }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onAnimationEnd();
+    }, 3000); // Match with the animation duration
+
+    return () => clearTimeout(timer);
+  }, [onAnimationEnd]);
+
   return (
-    <div className="maincontainer">
-      <div id="title">Genix</div>
-      <div id="subtitle">
-        <span>Constructions</span>
+    <div className="loader bg-[#02294A]">
+      <div className="logo">
+        <img src={logo} alt="Logo" />
       </div>
-      <p className="liner">You dream it, We build it.</p>
     </div>
   );
 };
 
-export default AnimatedText;
+export default Animation;

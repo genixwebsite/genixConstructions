@@ -1,186 +1,37 @@
-/* animation.css */
-
-.maincontainer {
-  text-align: center;
-  background: linear-gradient(141deg, #0e5a9d 25%, #05497A 30%, #02294a 40%);
-  color: #fff;
-  font-family: "Baskervville";
-  font-weight: 600;
-  font-size: 5.25em;
-  padding-top: 40vh;
+.loader {
+  position: relative;
+  width: 100%;
   height: 100vh;
-  width: 100%; /* Changed from min-width: 100vh to width: 100% to prevent overflow */
-  overflow: hidden; /* Ensure no overflow */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#title {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: showup 7s 1;
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: logoAnimation 3s forwards;
 }
 
-#subtitle {
-  color: #E30B21;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 0;
-  animation: reveal 7s 1;
-}
-
-#subtitle span {
-  margin-left: -22.188rem;
-  animation: slidein 7s 1;
-}
-
-.liner {
-  font-size: 1.725rem;
-  color: #858585;
-  opacity: 0;
-  animation: fadein 3.5s 1;
-  animation-delay: 2.5s;
-  margin-top: -3.5rem;
-  font-style: italic;
-  font-weight: 300;
-}
-
-@keyframes showup {
+@keyframes logoAnimation {
   0% {
-    opacity: 0;
+    width: 100px; /* Initial width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
+  50% {
+    width: 175px; /* Increased size */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   100% {
-    opacity: 0;
-  }
-}
-
-@keyframes slidein {
-  0% {
-    margin-left: -50rem;
-  }
-  20% {
-    margin-left: -50rem;
-  }
-  35% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes reveal {
-  0% {
-    opacity: 0;
-    width: 0;
-  }
-  20% {
-    opacity: 1;
-    width: 0;
-  }
-  30% {
-    width: 34rem;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    width: 34rem;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .maincontainer {
-    font-size: 3rem;
-  }
-  #subtitle span {
-    margin-left: -19.75rem;
-  }
-  @keyframes reveal {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 19.75rem;
-    }
-    100% {
-      width: 19.75rem;
-    }
-  }
-  .liner {
-    font-size: 1.25rem;
-    margin-top: -1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .maincontainer {
-    font-size: 2em;
-  }
-  #subtitle span {
-    margin-left: -12.5rem;
-  }
-  @keyframes reveal {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 12.5rem;
-    }
-    100% {
-      width: 12.5rem;
-    }
-  }
-  .liner {
-    font-size: 1rem;
-    margin-top: -1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .maincontainer {
-    font-size: 1.5em;
-  }
-  #subtitle span {
-    margin-left: -9.5rem;
-  }
-  @keyframes reveal {
-    0% {
-      width: 0;
-    }
-    30% {
-      width: 9.5rem;
-    }
-    100% {
-      width: 9.5rem;
-    }
-  }
-  .liner {
-    font-size: 0.75rem;
-    margin-top: -0.5rem;
+    width: 100px; /* Final width to match navbar logo size */
+    top: 0.25rem; /* Adjust top to align with the navbar padding */
+    left: 1.5rem; /* Adjust left to align with the navbar padding */
+    transform: translate(0, 0);
   }
 }
