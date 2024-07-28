@@ -38,20 +38,11 @@ const Second = () => {
             data-aos="fade-up"
             className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-white"
           >
-            Our expertise in estimating, construction, project management and
-            pre-construction services ensures that our customers receive a
-            quality product at a fair price and in a reasonable time frame. This
-            is accomplished through the selective use of responsible
-            subcontractors, hiring and retaining first class employees, and
-            working for clients that share a belief in open, honest, and direct
-            communication. Regardless of whether you are an owner, architect,
-            designer, engineer, tenant, broker, subcontractor, or supplier, you
-            are a respected member of our team and will be treated as such. This
-            commitment to team and to open project leadership yields not only
-            successful construction projects, but more importantly, satisfied
-            customers. The end result of this style of relationship building is
-            100% referable customers. We’re committed to your success. Contact
-            us today and let us know how we can help your next project succeed.
+            Expertise in estimating, construction, and project management ensures quality and fair pricing.
+            Selective use of responsible subcontractors and top-tier employees guarantees effective project execution.
+            Commitment to open, honest communication with all stakeholders fosters successful project outcomes.
+            Focus on relationship building results in 100% referable customers and high satisfaction.
+            Dedicated to your success—contact us to enhance your next project.
           </div>
         </div>
       </div>
