@@ -27,7 +27,7 @@ const Second = () => {
             longterm relationships with our clients.
           </div>
         </div>
-        <div className="bg-[#E30B21] h-1/2 md:h-screen md:w-3/5 flex flex-col justify-center items-center p-8 md:p-14">
+        <div className="bg-[#194c76] h-1/2 md:h-screen md:w-3/5 flex flex-col justify-center items-center p-8 md:p-14">
           <div
             data-aos="flip-up"
             className="text-3xl md:text-6xl italic font-bold text-white text-center mb-4"
@@ -38,11 +38,14 @@ const Second = () => {
             data-aos="fade-up"
             className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-white"
           >
-            Expertise in estimating, construction, and project management ensures quality and fair pricing.
-            Selective use of responsible subcontractors and top-tier employees guarantees effective project execution.
-            Commitment to open, honest communication with all stakeholders fosters successful project outcomes.
-            Focus on relationship building results in 100% referable customers and high satisfaction.
-            Dedicated to your success—contact us to enhance your next project.
+            Expertise in estimating, construction, and project management
+            ensures quality and fair pricing. Selective use of responsible
+            subcontractors and top-tier employees guarantees effective project
+            execution. Commitment to open, honest communication with all
+            stakeholders fosters successful project outcomes. Focus on
+            relationship building results in 100% referable customers and high
+            satisfaction. Dedicated to your success—contact us to enhance your
+            next project.
           </div>
         </div>
       </div>

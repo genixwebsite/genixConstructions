@@ -26,7 +26,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full text-white z-20 transition-colors duration-300 ${
-        isScrolled ? "bg-[#02294A] shadow-lg " : "bg-transparent"
+        isScrolled || location.pathname !== "/"
+          ? "bg-[#02294A] shadow-lg "
+          : "bg-transparent"
       }`}
     >
       <div className="mx-auto px-6 pt-1 flex justify-between items-center">

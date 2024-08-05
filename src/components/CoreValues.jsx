@@ -15,11 +15,11 @@ const CoreValues = () => {
   ];
 
   return (
-    <div className="flex flex-col maincontainer py-16 h-auto font-sans">
+    <div className="flex flex-col bg-[#02294A] py-16 h-auto font-sans justify-center">
       <div className="">
         {/* Core Values Heading */}
         <h1
-          className="text-5xl text-white font-semibold mb-16"
+          className="text-5xl text-white font-semibold mb-16 text-center"
           data-aos="zoom-in"
         >
           Our Core Values
@@ -35,7 +35,7 @@ const CoreValues = () => {
                 alt={value.text}
                 className={`${value.height} transform group-hover:scale-110 transition-transform duration-300`}
               />
-              <span className="mt-4 text-xl font-semibold text-center font-sans">
+              <span className="mt-4 text-xl font-semibold text-center font-sans text-white uppercase">
                 {value.text}
               </span>
             </div>

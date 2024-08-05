@@ -16,9 +16,9 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #E30B21; /* Optional: the scroll handle */
+  background: #045495; /* Optional: the scroll handle */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ab0b1b; /* Optional: the scroll handle when hovered */
+  background: #034982; /* Optional: the scroll handle when hovered */
 }
