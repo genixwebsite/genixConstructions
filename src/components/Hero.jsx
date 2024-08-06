@@ -4,7 +4,7 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-center">
         <video
           className=" top-0 left-0 w-full h-full object-cover"
-          src="https://videos.pexels.com/video-files/5567711/5567711-hd_1920_1080_30fps.mp4"
+          src="/temp.mp4"
           autoPlay
           loop
           muted
