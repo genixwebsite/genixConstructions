@@ -30,7 +30,7 @@ const Fifth = () => {
                 className="card-avatar"
                 style={{ backgroundImage: `url(${image.src})` }}
               />
-              <div className="card-social">
+              <div className="card-social delay-200">
                 <div className="card-social__item">
                   <p>{image.text}</p>
                 </div>

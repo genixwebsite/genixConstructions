@@ -13,7 +13,7 @@ const Second = () => {
         <div className="bg-white h-1/2 md:h-screen md:w-2/5 flex flex-col justify-center items-center p-8 md:p-16">
           <div
             data-aos="flip-up"
-            className="text-3xl md:text-6xl italic font-bold text-[#02294A] text-center mb-4"
+            className="text-3xl md:text-6xl italic font-bold text-[#CFA35D] text-center mb-4"
           >
             Our Mission
           </div>
@@ -30,13 +30,13 @@ const Second = () => {
         <div className="bg-[#CFA35D] h-1/2 md:h-screen md:w-3/5 flex flex-col justify-center items-center p-8 md:p-14">
           <div
             data-aos="flip-up"
-            className="text-3xl md:text-6xl italic font-bold text-black text-center mb-4"
+            className="text-3xl md:text-6xl italic font-bold text-[#02294A] text-center mb-4"
           >
             Our Vision
           </div>
           <div
             data-aos="fade-up"
-            className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-black"
+            className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-[#02294A]"
           >
             Expertise in estimating, construction, and project management
             ensures quality and fair pricing. Selective use of responsible

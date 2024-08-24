@@ -35,10 +35,10 @@ const Third = () => {
             className='h-64 w-full bg-[url("/image1.jpg")] bg-cover bg-center relative group rounded-xl overflow-hidden'
           >
             <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center transition-opacity duration-500">
-              <div className="text-lg md:text-4xl font-semibold text-white text-center group-hover:hidden">
+              <div className="text-lg md:text-4xl font-semibold text-white text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 PreConstruction
               </div>
-              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:delay-300 group-hover:group-focus:delay-300">
                 <div>Value Engineering</div>
                 <div>Site Assessment</div>
                 <div>Material</div>
@@ -50,10 +50,10 @@ const Third = () => {
             className='h-64 w-full bg-[url("/image2.jpg")] bg-cover bg-center relative group rounded-xl overflow-hidden'
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-500">
-              <div className="text-lg md:text-4xl font-semibold text-white text-center group-hover:hidden">
+              <div className="text-lg md:text-4xl font-semibold text-white text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 Construction
               </div>
-              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:delay-300 group-hover:group-focus:delay-300">
                 <div>Quality Control</div>
                 <div>Project Management</div>
                 <div>Timely Completion</div>
@@ -66,10 +66,10 @@ const Third = () => {
             className='h-64 w-full bg-[url("/image3.jpg")] bg-cover bg-center relative group rounded-xl overflow-hidden'
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-500">
-              <div className="text-lg md:text-4xl font-semibold text-white text-center group-hover:hidden">
+              <div className="text-lg md:text-4xl font-semibold text-white text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 Commission
               </div>
-              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:delay-300 group-hover:group-focus:delay-300">
                 <div>Punch list</div>
                 <div>Correction of points</div>
                 <div>As built documents</div>
@@ -81,10 +81,10 @@ const Third = () => {
             className='h-64 w-full bg-[url("/image4.jpg")] bg-cover bg-center relative group rounded-xl overflow-hidden'
           >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-500">
-              <div className="text-lg md:text-4xl font-semibold text-white text-center group-hover:hidden">
+              <div className="text-lg md:text-4xl font-semibold text-white text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 PostConstruction
               </div>
-              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="flex flex-col text-sm md:text-xl text-white font-semibold mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:delay-300 group-hover:group-focus:delay-300">
                 <div>Rectification of issues</div>
                 <div>Service during DLP</div>
                 <div>Ongoing assistance for as long as needed</div>
