@@ -7,7 +7,9 @@ import "../styles/nav.css";
 const Navbar = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -42,6 +44,7 @@ const Navbar = () => {
               className={`nav-link ${
                 location.pathname === "/" ? "active" : ""
               }`}
+              onClick={handleScrollToTop}
             >
               Home
             </Link>
@@ -52,6 +55,7 @@ const Navbar = () => {
               className={`nav-link ${
                 location.pathname === "/about" ? "active" : ""
               }`}
+              onClick={handleScrollToTop}
             >
               About
             </Link>
@@ -62,6 +66,7 @@ const Navbar = () => {
               className={`nav-link ${
                 location.pathname === "/projects" ? "active" : ""
               }`}
+              onClick={handleScrollToTop}
             >
               Projects
             </Link>
@@ -72,6 +77,7 @@ const Navbar = () => {
               className={`nav-link ${
                 location.pathname === "/contactus" ? "active" : ""
               }`}
+              onClick={handleScrollToTop}
             >
               Contact Us
             </Link>

@@ -16,9 +16,13 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #045495; /* Optional: the scroll handle */
+  background: #CFA35D; /* Optional: the scroll handle */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #034982; /* Optional: the scroll handle when hovered */
+  background: #9C783E; /* Optional: the scroll handle when hovered */
+}
+
+::selection {
+  background-color: #CFA35D; /* Replace with your desired background color */
 }

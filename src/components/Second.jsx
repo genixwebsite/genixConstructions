@@ -27,16 +27,16 @@ const Second = () => {
             longterm relationships with our clients.
           </div>
         </div>
-        <div className="bg-[#194c76] h-1/2 md:h-screen md:w-3/5 flex flex-col justify-center items-center p-8 md:p-14">
+        <div className="bg-[#CFA35D] h-1/2 md:h-screen md:w-3/5 flex flex-col justify-center items-center p-8 md:p-14">
           <div
             data-aos="flip-up"
-            className="text-3xl md:text-6xl italic font-bold text-white text-center mb-4"
+            className="text-3xl md:text-6xl italic font-bold text-black text-center mb-4"
           >
             Our Vision
           </div>
           <div
             data-aos="fade-up"
-            className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-white"
+            className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-black"
           >
             Expertise in estimating, construction, and project management
             ensures quality and fair pricing. Selective use of responsible

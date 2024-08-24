@@ -12,12 +12,12 @@ const Fourth = () => {
       <div className="bg-white h-auto md:h-screen w-full md:w-2/5 flex justify-center items-center p-8 md:p-16">
         <div
           data-aos="fade-right"
-          className="text-3xl md:text-6xl font-bold text-[#045495] text-center"
+          className="text-3xl md:text-6xl font-bold text-[#CFA35D] text-center"
         >
           Our Services
         </div>
       </div>
-      <div className="bg-[#045495] h-full w-full md:w-3/5 flex flex-wrap justify-center items-center p-4 md:p-8">
+      <div className="bg-[#CFA35D] h-full w-full md:w-3/5 flex flex-wrap justify-center items-center p-4 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           <div className='h-52 md:h-64 w-full bg-[url("/image6.jpg")] bg-cover bg-center relative group rounded-xl overflow-hidden'>
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">

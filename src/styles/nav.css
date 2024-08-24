@@ -2,11 +2,10 @@
 .nav-item {
   position: relative;
 }
-
 .nav-item::after {
   content: '';
   width: 0%;
-  background: #fff;
+  background: #CFA35D;
   transition: 0.5s;
   height: 2px;
   display: block;
@@ -20,7 +19,21 @@
 .nav-item:hover::after {
   width: 100%;
 }
+
 .nav-link.active {
-font-weight: 600;
-  
+  color: #CFA35D;
+  position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+.nav-link.active::after {
+  content: '';
+  width: 100%;
+  background: #CFA35D;
+  height: 3px;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: -7px; /* Adjust based on your layout */
+  left: 0;
+  right: 0;
 }
