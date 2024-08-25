@@ -7,7 +7,7 @@
   width: 0%;
   background: #CFA35D;
   transition: 0.5s;
-  height: 2px;
+  height: 3px;
   display: block;
   margin: auto;
   position: absolute;
@@ -32,8 +32,8 @@
   height: 3px;
   display: block;
   margin: auto;
-  position: absolute;
-  bottom: -7px; /* Adjust based on your layout */
+  position: relative;
+  bottom: -5px; /* Adjust based on your layout */
   left: 0;
   right: 0;
 }

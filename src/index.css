@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    font-family:  "Open Sans", sans-serif;
+    font-family:  "Raleway", sans-serif;
     overflow-x: hidden;
 }
 /* Custom scrollbar styles */

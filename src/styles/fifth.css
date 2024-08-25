@@ -2,14 +2,14 @@
    display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 1000px; /* Adjust max-width as needed */
+  max-width: 1200px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center align cards */
   
 }
 
 .card {
-  width: 225px; /* Keep card width as before */
-  height: 280px; /* Keep card height as before */
+  width: 165px; /* Keep card width as before */
+  height: 200px; /* Keep card height as before */
   background: #fff;
   padding: 2rem 1.5rem;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
@@ -30,8 +30,8 @@
 }
 
 .card-avatar {
-  width: 180px; /* Reduced avatar size */
-  height: 180px; /* Reduced avatar size */
+  width: 90px; /* Reduced avatar size */
+  height: 90px; /* Reduced avatar size */
   background-size:contain;
 background-position: center;
 background-repeat: no-repeat;
@@ -46,7 +46,8 @@ background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 100%;
-  opacity: 0;
+  opacity: 1;
+  font-weight: 600;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -63,16 +64,17 @@ background-repeat: no-repeat;
 
 .card:hover {
   box-shadow: 0 8px 50px #23232333;
+  transform: scale(1.1);
 }
 
-.card:hover .card-info {
+/* .card:hover .card-info {
   transform: translateY(-5%);
 }
 
 .card:hover .card-social {
   transform: translateY(100%);
   opacity: 1;
-}
+} */
 
 .card-social__item svg {
   display: block;
@@ -83,11 +85,11 @@ background-repeat: no-repeat;
   transition: fill 0.2s ease, transform 0.2s ease;
 }
 
-.card-social__item svg:hover {
+/* .card-social__item svg:hover {
   fill: #232323;
   transform: scale(1.1);
-}
+} */
 
-.card-avatar:hover {
+/* .card-avatar:hover {
   transform: scale(1.1);
-}
+} */
