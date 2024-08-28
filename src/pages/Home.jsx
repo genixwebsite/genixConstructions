@@ -17,7 +17,6 @@ const Home = () => {
       <Fourth />
       <Fifth />
       <Sixth />
-      <BottomNavBar />
     </div>
   );
 };

@@ -6,6 +6,9 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import Animation from "./components/Animation";
+import Roseate from "./pages/Projects/Roseate";
+import BottomNavBar from "./components/BottomNavBar";
+import Taj from "./pages/Projects/Taj";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +49,10 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/projects/roseate" element={<Roseate />} />
+        <Route path="/projects/taj" element={<Taj/>} />
       </Routes>
+      <BottomNavBar />
       {showButton && (
         <button
           onClick={scrollToTop}

@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link
               to="/projects"
               className={`nav-link ${
-                location.pathname === "/projects" ? "active" : ""
+                location.pathname.startsWith("/projects") ? "active" : ""
               }`}
               onClick={handleScrollToTop}
             >

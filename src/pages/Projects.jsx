@@ -1,21 +1,23 @@
 // src/pages/Projects.jsx
 import { Link } from "react-router-dom";
 import "../styles/projects.css"
+import roseate from "../assets/projects/roseate/1.jpg"
+
 const CompletedProjects = () => {
   return (
     <div className="flex flex-wrap justify-center">
       <div className="project-card">
-        <Link to="/project1" className="project-link">
+        <Link to="/projects/roseate" className="project-link">
           <img
-            src="https://images.unsplash.com/photo-1604709177225-055f99402ea3"
+            src={roseate}
             alt="Completed Project 1"
             className="project-image"
           />
-          <div className="project-name">SUPERNOVA</div>
+          <div className="project-name">ROSEATE HOUSE</div>
         </Link>
       </div>
       <div className="project-card">
-        <Link to="/project2" className="project-link">
+        <Link to="/projects/taj" className="project-link">
           <img
             src="https://images.unsplash.com/photo-1604709177225-055f99402ea3"
             alt="Completed Project 2"
