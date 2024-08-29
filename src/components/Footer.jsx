@@ -59,17 +59,18 @@ const Footer = () => {
                 <IoLocationSharp />
               </div>
               <p className="text-white ml-[15px] text-base">
-                <span className="block text-sm leading-[2]">
+                {/* <span className="block text-sm leading-[2]">
                   444 S. Cedros Ave
                 </span>{" "}
-                Solana Beach, California
+                Solana Beach, California */}
+                Noida (NCR)
               </p>
             </div>
             <div className="flex items-center my-4">
               <div className=" text-2xl text-white rounded-full text-center bg-[#CFA35D] p-1.5">
                 <IoCallSharp />
               </div>
-              <p className="text-white ml-[15px]">+1.555.555.5555</p>
+              <p className="text-white ml-[15px]">+91-750-3000-506</p>
             </div>
             <div className="flex items-center my-4">
               <div className=" text-2xl text-white rounded-full text-center bg-[#CFA35D] p-1.5">
@@ -77,10 +78,10 @@ const Footer = () => {
               </div>
               <p className="text-white ml-[15px]">
                 <a
-                  href="mailto:support@company.com"
+                  href="mailto:info@genixconstructions.com"
                   className="text-teal-400 no-underline"
                 >
-                  support@company.com
+                  info@genixconstructions.com
                 </a>
               </p>
             </div>
