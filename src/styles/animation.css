@@ -17,13 +17,13 @@
 
 @keyframes logoAnimation {
   0% {
-    width: 100px; /* Initial width */
+    width: 120px; /* Initial width */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   50% {
-    width: 175px; /* Increased size */
+    width: 305px; /* Increased size */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
