@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import "../styles/projects.css"
 import roseate from "../assets/projects/roseate/1.jpg"
+import taj from "../assets/projects/taj/1.jpg";
 
 const CompletedProjects = () => {
   return (
@@ -19,7 +20,7 @@ const CompletedProjects = () => {
       <div className="project-card">
         <Link to="/projects/taj" className="project-link">
           <img
-            src="https://images.unsplash.com/photo-1604709177225-055f99402ea3"
+            src={taj}
             alt="Completed Project 2"
             className="project-image"
           />

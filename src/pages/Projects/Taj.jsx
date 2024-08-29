@@ -25,79 +25,79 @@ const Taj = () => {
           backgroundPosition: "center",
         }}
       > */}
-        <div className="max-w-4xl mx-auto flex bg-gray-100  p-6">
-          {/* Main Carousel */}
-          <div className="w-3/4">
-            <Carousel
-              showThumbs={false}
-              showStatus={false}
-              infiniteLoop
-              useKeyboardArrows
-              autoPlay
-              showArrows={false}
-              //selectedItem={0}
-              className="shadow-lg"
-              selectedItem={activeIndex}
-              onChange={setActiveIndex}
-            >
-              <div>
-                <img
-                  src={img1}
-                  alt="Slide 1"
-                  className="object-cover w-full h-96"
-                />
-              </div>
-              <div>
-                <img
-                  src={img2}
-                  alt="Slide 2"
-                  className="object-cover w-full h-96"
-                />
-              </div>
-              <div>
-                <img
-                  src={img3}
-                  alt="Slide 3"
-                  className="object-cover w-full h-96"
-                />
-              </div>
-              <div>
-                <img
-                  src={img4}
-                  alt="Slide 4"
-                  className="object-cover w-full h-96"
-                />
-              </div>
-            </Carousel>
-          </div>
-
-          <div className="w-1/4 flex flex-col space-y-4 ml-4">
-            <img
-              src={img1}
-              alt="Thumbnail 1"
-              className="object-cover h-[5.25rem] w-3/4 cursor-pointer"
-              onClick={() => handleThumbnailClick(0)}
-            />
-            <img
-              src={img2}
-              alt="Thumbnail 2"
-              className="object-cover h-[5.25rem] w-3/4 cursor-pointer"
-              onClick={() => handleThumbnailClick(1)}
-            />
-            <img
-              src={img3}
-              alt="Thumbnail 3"
-              className="object-cover h-[5.25rem] w-3/4 cursor-pointer"
-              onClick={() => handleThumbnailClick(2)}
-            />
-            <img
-              src={img4}
-              alt="Thumbnail 4"
-              className="object-cover h-[5.25rem] w-3/4 cursor-pointer"
-              onClick={() => handleThumbnailClick(3)}
-            />
-          </div>
+      <div className="max-w-4xl mx-auto flex bg-gray-100  p-6">
+        {/* Main Carousel */}
+        <div className="w-3/4">
+          <Carousel
+            showThumbs={false}
+            showStatus={false}
+            infiniteLoop
+            useKeyboardArrows
+            autoPlay
+            showArrows={false}
+            //selectedItem={0}
+            className="shadow-lg"
+            selectedItem={activeIndex}
+            onChange={setActiveIndex}
+          >
+            <div>
+              <img
+                src={img1}
+                alt="Slide 1"
+                className="object-cover w-full h-96"
+              />
+            </div>
+            <div>
+              <img
+                src={img2}
+                alt="Slide 2"
+                className="object-cover w-full h-96"
+              />
+            </div>
+            <div>
+              <img
+                src={img3}
+                alt="Slide 3"
+                className="object-cover w-full h-96"
+              />
+            </div>
+            <div>
+              <img
+                src={img4}
+                alt="Slide 4"
+                className="object-cover w-full h-96"
+              />
+            </div>
+          </Carousel>
         </div>
+
+        <div className="w-1/4 flex flex-col space-y-4 ml-4">
+          <img
+            src={img1}
+            alt="Thumbnail 1"
+            className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            onClick={() => handleThumbnailClick(0)}
+          />
+          <img
+            src={img2}
+            alt="Thumbnail 2"
+            className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            onClick={() => handleThumbnailClick(1)}
+          />
+          <img
+            src={img3}
+            alt="Thumbnail 3"
+            className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            onClick={() => handleThumbnailClick(2)}
+          />
+          <img
+            src={img4}
+            alt="Thumbnail 4"
+            className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            onClick={() => handleThumbnailClick(3)}
+          />
+        </div>
+      </div>
       {/* </div> */}
       <p className="mt-8 text-center text-gray-700 text-lg max-w-2xl mx-auto">
         Roseate House is a luxurious retreat offering an exquisite blend of
