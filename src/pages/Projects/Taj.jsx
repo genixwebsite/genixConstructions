@@ -5,6 +5,8 @@ import img3 from "../../assets/projects/taj/3.jpg";
 import img4 from "../../assets/projects/taj/4.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { IoCaretBackSharp } from "react-icons/io5";
 const Taj = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -45,6 +47,7 @@ const Taj = () => {
                 src={img1}
                 alt="Slide 1"
                 className="object-cover w-full h-96"
+                loading="lazy"
               />
             </div>
             <div>
@@ -52,6 +55,7 @@ const Taj = () => {
                 src={img2}
                 alt="Slide 2"
                 className="object-cover w-full h-96"
+                loading="lazy"
               />
             </div>
             <div>
@@ -59,6 +63,7 @@ const Taj = () => {
                 src={img3}
                 alt="Slide 3"
                 className="object-cover w-full h-96"
+                loading="lazy"
               />
             </div>
             <div>
@@ -66,6 +71,7 @@ const Taj = () => {
                 src={img4}
                 alt="Slide 4"
                 className="object-cover w-full h-96"
+                loading="lazy"
               />
             </div>
           </Carousel>
@@ -77,24 +83,28 @@ const Taj = () => {
             alt="Thumbnail 1"
             className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleThumbnailClick(0)}
+            loading="lazy"
           />
           <img
             src={img2}
             alt="Thumbnail 2"
             className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleThumbnailClick(1)}
+            loading="lazy"
           />
           <img
             src={img3}
             alt="Thumbnail 3"
             className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleThumbnailClick(2)}
+            loading="lazy"
           />
           <img
             src={img4}
             alt="Thumbnail 4"
             className="object-cover h-[5.25rem] w-3/4 cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => handleThumbnailClick(3)}
+            loading="lazy"
           />
         </div>
       </div>
@@ -106,6 +116,15 @@ const Taj = () => {
         ambiance. Enjoy a stay that combines style, comfort, and sophistication
         at Roseate House.
       </p>
+      {/* Sliding Button */}
+      <div className="fixed top-1 left-4 pt-28">
+        <Link
+          to="/projects"
+          className="inline-flex items-center px-6 py-3 font-bold text-white bg-[#CFA35D] transition-transform duration-300 hover:bg-[#9C783E]"
+        >
+          <IoCaretBackSharp className="mr-2" /> Back to Projects
+        </Link>
+      </div>
     </div>
   );
 };

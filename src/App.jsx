@@ -7,8 +7,10 @@ import Projects from "./pages/Projects";
 import ContactUs from "./pages/ContactUs";
 import Animation from "./components/Animation";
 import Roseate from "./pages/Projects/Roseate";
-import BottomNavBar from "./components/BottomNavBar";
+import Footer from "./components/Footer";
 import Taj from "./pages/Projects/Taj";
+import Prateek from "./pages/Projects/Prateek";
+import Autolek from "./pages/Projects/Autolek";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,9 +52,11 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/projects/roseate" element={<Roseate />} />
-        <Route path="/projects/taj" element={<Taj/>} />
+        <Route path="/projects/taj" element={<Taj />} />
+        <Route path="/projects/prateek-edifice" element={<Prateek />} />
+        <Route path="/projects/autolek" element={<Autolek />} />
       </Routes>
-      <BottomNavBar />
+      <Footer />
       {showButton && (
         <button
           onClick={scrollToTop}

@@ -1,13 +1,13 @@
 import { Carousel } from "react-responsive-carousel";
-import img1 from "../../assets/projects/roseate/1.jpg";
-import img2 from "../../assets/projects/roseate/2.jpg";
-import img3 from "../../assets/projects/roseate/3.jpg";
-import img4 from "../../assets/projects/roseate/4.jpg";
+import img1 from "../../assets/projects/prateek/1.jpg";
+import img2 from "../../assets/projects/prateek/2.jpg";
+import img3 from "../../assets/projects/prateek/3.jpg";
+import img4 from "../../assets/projects/prateek/4.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
-const Taj = () => {
+import { useState } from "react";
+const Prateek = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleThumbnailClick = (index) => {
@@ -16,7 +16,7 @@ const Taj = () => {
   return (
     <div className="py-8 pt-32 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold py-8 text-center text-gray-800">
-        Roseate House
+        Prateek Edifice
       </h1>
       {/* <div
         className="w-full h-3/4 p-12"
@@ -62,7 +62,7 @@ const Taj = () => {
               <img
                 src={img3}
                 alt="Slide 3"
-                className="object-cover w-full h-96"
+                className=" object-contain w-full h-96"
                 loading="lazy"
               />
             </div>
@@ -70,7 +70,7 @@ const Taj = () => {
               <img
                 src={img4}
                 alt="Slide 4"
-                className="object-cover w-full h-96"
+                className="object-contain w-full h-96"
                 loading="lazy"
               />
             </div>
@@ -129,4 +129,4 @@ const Taj = () => {
   );
 };
 
-export default Taj;
+export default Prateek;
