@@ -38,7 +38,7 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-[100px]" />
           </Link>
         </div>
-        <ul className="flex space-x-4 text-xl">
+        <ul className="flex space-x-4 text-lg">
           <li className="nav-item">
             <Link
               to="/"
