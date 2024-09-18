@@ -9,7 +9,7 @@ const people = [
     id: 1,
     name: "Rakesh Singh",
     designation: "Managing Director",
-    completeInfo: "Managing Director - B.E (Civil)",
+    completeInfo: "MD & Founder - B.E (Civil)",
     image: "/person1.jpg",
     info: "Rakesh has worked over 22 years on Industrial, Hotel, Commercial & Residential Projects. His experience includes working on many large projects such as OEM Plants of Daimler & Claas India, 5 Star Hotels - Kabul Serena, Luxury Camps of SUJAN Sher Bagh & JAWAI Leopard camp, High-End Residential Projects — SUPERNOVA Noida, IVY Gurgaon. As the Managing Director, he believes that having an approachable attitude aids in the success of our employees as well as our projects."
   },
@@ -103,7 +103,7 @@ const About = () => {
               <div className="md:w-1/2 md:order-2 flex items-center justify-center p-4">
                 <div data-aos="fade-left">
                   <h3 className="text-2xl font-bold mb-2">RAKESH SINGH</h3>
-                  <p className="text-lg mb-2">Managing Director - B.E (Civil)</p>
+                  <p className="text-lg mb-2">MD & Founder - B.E (Civil)</p>
                   <p className="text-lg text-justify">
                     Rakesh has worked over 22 years on Industrial, Hotel,
                     Commercial & Residential Projects.
@@ -128,7 +128,7 @@ const About = () => {
               <div className="md:w-1/2 md:order-1 flex items-center justify-center p-4">
                 <div data-aos="fade-right">
                   <h3 className="text-2xl font-bold mb-2">ARVIND CHAUDHARY</h3>
-                  <p className="text-lg mb-2">Co -Founder & Director - B-Tech & MBA(Finance & Marketing)</p>
+                  <p className="text-lg mb-2">Co-Founder - B-Tech & MBA(Finance & Marketing)</p>
                   <p className="text-lg text-justify">
                     Arvind comes with rich experience of 18 years on
                     Industrial Projects and different flooring solutions.

@@ -27,23 +27,23 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full text-white z-20 transition-colors duration-300 ${
-        isScrolled || location.pathname !== "/"
-          ? "bg-[#02294A] shadow-lg "
+      className={`fixed top-0 left-0 w-full h-28 text-white font-semibold z-20 transition-colors duration-300 ${isScrolled || location.pathname !== "/"
+          ? "bg-[#02294A] shadow-2xl "
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="mx-auto px-6 pt-1 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <img src={logo} alt="logo" className=" w-[100px]" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="w-[100px]" />
+          </Link>
         </div>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-4 text-xl">
           <li className="nav-item">
             <Link
               to="/"
-              className={`nav-link ${
-                location.pathname === "/" ? "active" : ""
-              }`}
+              className={`nav-link ${location.pathname === "/" ? "active" : ""
+                }`}
               onClick={handleScrollToTop}
             >
               Home
@@ -52,9 +52,8 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               to="/about"
-              className={`nav-link ${
-                location.pathname === "/about" ? "active" : ""
-              }`}
+              className={`nav-link ${location.pathname === "/about" ? "active" : ""
+                }`}
               onClick={handleScrollToTop}
             >
               About
@@ -63,9 +62,8 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               to="/projects"
-              className={`nav-link ${
-                location.pathname.startsWith("/projects") ? "active" : ""
-              }`}
+              className={`nav-link ${location.pathname.startsWith("/projects") ? "active" : ""
+                }`}
               onClick={handleScrollToTop}
             >
               Projects
@@ -74,9 +72,8 @@ const Navbar = () => {
           <li className="nav-item">
             <Link
               to="/contactus"
-              className={`nav-link ${
-                location.pathname === "/contactus" ? "active" : ""
-              }`}
+              className={`nav-link ${location.pathname === "/contactus" ? "active" : ""
+                }`}
               onClick={handleScrollToTop}
             >
               Contact Us

@@ -39,7 +39,7 @@ const Hero = () => {
   useEffect(() => {
     const lineTimeout = setTimeout(() => {
       setShowLine(false);
-    }, 8000); // Line animation duration
+    }, 2000); // Line animation duration
     return () => clearTimeout(lineTimeout);
   }, []);
 
@@ -73,11 +73,10 @@ const Hero = () => {
           )}
         </div>
         <div
-          className={`absolute bottom-16 transition-opacity duration-500 ${
-            !showLine ? "opacity-100 delay-500" : "opacity-0"
-          }`}
+          className={`absolute bottom-16 transition-opacity duration-500 ${!showLine ? "opacity-100 delay-500" : "opacity-0"
+            }`}
         >
-          <h2 className="text-xl font-semibold p-2 w-96 h-24 text-white">
+          <h2 className="text-xl font-bold p-2 w-96 h-24 text-white">
             {text}
           </h2>
         </div>
@@ -85,25 +84,21 @@ const Hero = () => {
       <style jsx>{`
         @keyframes lineAnimation {
           0% {
-            transform: translateY(100vh) rotate(0deg);
+            transform: translateY(100vh);   
             opacity: 1;
           }
           50% {
-            transform: translateY(0) rotate(0deg);
-            opacity: 1;
-          }
-          60% {
-            transform: translateY(0) rotate(360deg);
+            transform: translateY(0); 
             opacity: 1;
           }
           100% {
-            transform: translate(-150px, 0) rotate(360deg);
-            opacity: 0;
+            transform: translate(-150px, 0); 
+            opacity: 0; 
           }
         }
 
         .animate-line {
-          animation: lineAnimation 8s forwards;
+          animation: lineAnimation 2s forwards;
         }
       `}</style>
     </div>
