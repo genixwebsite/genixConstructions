@@ -3,9 +3,11 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo-bg-removed.png";
 import "../styles/nav.css";
-
+import useMediaQuery from "../hooks/useMediaQuery";
+import MobileNavbar from "./MobileNavbar";
 const Navbar = () => {
   const location = useLocation();
+  const isMobile = useMediaQuery("(max-width: 767px)");
   const [isScrolled, setIsScrolled] = useState(false);
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -24,6 +26,9 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  if (isMobile) {
+    return <MobileNavbar/>;
+  }
 
   return (
     <nav

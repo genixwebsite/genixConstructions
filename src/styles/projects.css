@@ -1,16 +1,27 @@
 /* src/styles/projects.css */
+
+/* Container for the project cards */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each project card */
 .project-card {
   margin: 1rem;
   width: calc(33.33% - 2rem);
   position: relative;
 }
 
+/* Styling for the project link */
 .project-link {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
+/* Styling for project images */
 .project-image {
   width: 100%;
   height: 20rem;
@@ -19,6 +30,7 @@
   object-position: center;
 }
 
+/* Styling for project names */
 .project-name {
   position: absolute;
   bottom: 0;
@@ -30,12 +42,47 @@
   text-align: center;
   transition: transform 0.3s ease;
   transform: translateY(100%);
+  font-size: 0.875rem; /* Adjust font size */
 }
 
+/* Hover effects */
 .project-link:hover .project-image {
   transform: scale(1.1);
 }
 
 .project-link:hover .project-name {
   transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .project-card {
+    width: calc(50% - 1rem); /* Reduced margin for medium screens */
+    margin: 0.5rem; /* Reduced margin for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: calc(100% - 1rem); /* Full width with reduced margin */
+    margin: 0.5rem; /* Reduced margin for small screens */
+  }
+
+  .project-image {
+    height: 12rem; /* Adjust height for smaller screens */
+  }
+
+  .project-name {
+    padding: 0.25rem; /* Reduced padding for mobile screens */
+    font-size: 0.75rem; /* Adjust font size for mobile screens */
+    transform: translateY(0); /* Ensure name is visible by default */
+  }
+
+  .project-link:hover .project-image {
+    transform: none; /* Disable hover effect on mobile */
+  }
+
+  .project-link:hover .project-name {
+    transform: translateY(0); /* Ensure name is visible by default */
+  }
 }
