@@ -56,18 +56,18 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      <div className="flex flex-col md:flex-row min-h-screen pt-24">
+    <div className=" overflow-x-hidden">
+      <div className="flex flex-col md:flex-row pt-28 md:pt-24 ">
         {/* Text Block */}
-        <div className="flex-1 flex items-center justify-center p-8 ml-12">
-          <div>
+        <div className="flex-1 flex items-center justify-center p-8 lg:ml-12 mx-auto">
+          <div className="  mx-auto">
             <h1
               data-aos="zoom-in"
-              className="text-5xl text-[#02294A] font-bold mb-4"
+              className="text-4xl md:text-5xl text-[#02294A] font-bold mb-4"
             >
               About Us
             </h1>
-            <p data-aos="zoom-in" className="text-lg text-justify">
+            <p data-aos="zoom-in" className="text-base md:text-lg text-justify">
               GENIX CONSTRUCTIONS is a construction and interior fit-out company
               with a team of skilled professionals who have decades of
               experience in executing High-End Residential Projects, Luxury
@@ -95,111 +95,59 @@ const About = () => {
         {/* Image Container */}
         <div
           data-aos="zoom-in"
-          className="flex-1 flex items-center justify-center p-8"
+          className="flex-1 flex items-center justify-center p-6 md:p-8"
         >
           <img
             src="/logo-color.png"
             alt="About Us"
-            className="w-80 h-80 object-cover overflow-hidden"
+            className="w-60 max-w-xs md:w-80 h-auto object-cover overflow-hidden"
           />
         </div>
       </div>
 
       {/* Core Values */}
       <CoreValues />
+
+      {/* Leadership Section */}
       <div className="flex flex-col items-center justify-center min-h-screen pt-12 mb-12 px-4">
         <div className="flex items-center justify-center flex-1">
           <div className="max-w-screen-lg mt-16">
-            {/* Your content inside max-w-screen-lg */}
             <h2
               data-aos="fade-up"
-              className="text-5xl text-[#02294A] font-bold mb-8 text-center"
+              className="text-4xl md:text-5xl text-[#02294A] font-bold mb-8 text-center"
             >
               Leadership
             </h2>
 
-            {/* Person 1 */}
-            <div className="flex flex-col md:flex-row mb-8">
-              <div className="md:w-1/2 md:order-1 flex items-center justify-center p-4">
-                <img
-                  data-aos="fade-right"
-                  src="/person1.jpg"
-                  alt="Person 1"
-                  className="w-64 h-64 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-              <div className="md:w-1/2 md:order-2 flex items-center justify-center p-4">
-                <div data-aos="fade-left">
-                  <h3 className="text-2xl font-bold mb-2">RAKESH SINGH</h3>
-                  <p className="text-lg mb-2">MD & Founder - B.E (Civil)</p>
-                  <p className="text-lg text-justify">
-                    Rakesh has worked over 22 years on Industrial, Hotel,
-                    Commercial & Residential Projects. Rakesh experience has led
-                    him to work on many large project such as OEM Plants of
-                    Daimler & Claas India, 5 Star Hotels - Kabul Serena, Luxury
-                    Camps of SUJAN Sher Bagh & JAWAI Leopard camp, Heigh-End
-                    Residential Projects — SUPERNOVA Noida, IVY Gurgaon. "As the
-                    Managing Director I believe that having an approachable
-                    attitude aids in the success of our employees as well our
-                    projects"
-                  </p>
+            {/* Loop through people */}
+            {people.map((person, index) => (
+              <div
+                key={person.id}
+                className={`flex flex-col md:flex-row mb-8 ${
+                  index % 2 === 0 ? "md:flex-row-reverse" : ""
+                }`}
+              >
+                <div className="md:w-1/2 flex items-center justify-center p-4">
+                  <img
+                    data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+                    src={person.image}
+                    alt={person.name}
+                    className="w-full max-w-xs md:w-64 h-auto object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="md:w-1/2 flex items-center justify-center p-4">
+                  <div data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}>
+                    <h3 className="text-2xl font-bold mb-2">
+                      {person.name.toUpperCase()}
+                    </h3>
+                    <p className="text-lg mb-2">{person.completeInfo}</p>
+                    <p className="text-base md:text-lg text-justify">
+                      {person.info}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Person 2 */}
-            <div className="flex flex-col md:flex-row mb-8">
-              <div className="md:w-1/2 md:order-2 flex items-center justify-center p-4">
-                <img
-                  data-aos="fade-left"
-                  src="/person2.jpg"
-                  alt="Person 2"
-                  className="w-64 h-64 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-              <div className="md:w-1/2 md:order-1 flex items-center justify-center p-4">
-                <div data-aos="fade-right">
-                  <h3 className="text-2xl font-bold mb-2">ARVIND CHAUDHARY</h3>
-                  <p className="text-lg mb-2">
-                    Co-Founder - B-Tech & MBA(Finance & Marketing)
-                  </p>
-                  <p className="text-lg text-justify">
-                    Arvind comes with rich experience of 18 years on Industrial
-                    Projects and different flooring solutions. Arvind has led a
-                    flooring solutions team of Flowcrete , and Cipy. Executed
-                    industrial Projects of companies like, Flipkart, Hair,
-                    Ahlcon, Amazon retrofitting of floor etc. "As the Co-founder
-                    I believe that Quality has No explanation"
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Person 3 */}
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-1/2 md:order-1 flex items-center justify-center p-4">
-                <img
-                  data-aos="fade-right"
-                  src="/person3.jpg"
-                  alt="Person 3"
-                  className="w-64 h-64 object-cover rounded-lg shadow-lg"
-                />
-              </div>
-              <div className="md:w-1/2 md:order-2 flex items-center justify-center p-4">
-                <div data-aos="fade-left">
-                  <h3 className="text-2xl font-bold mb-2">ATUL BHATT</h3>
-                  <p className="text-lg mb-2">GM Operations - AMICE (Civil)</p>
-                  <p className="text-lg text-justify">
-                    Atul comes come with over 20 years on Industrial Projects,
-                    Interior & Office buildings, Metro Project. Atul has worked
-                    on many reputed Projects like. DMRC Airport line, Mahindra
-                    Plant Indore, Jubilant Roorkee, Tokia Rika Minda Bangalore,
-                    Mitsubishi Chennai, Portia India Pune, Mizuho Bank Interior
-                    Mumbai
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

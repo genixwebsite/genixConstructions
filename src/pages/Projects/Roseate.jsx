@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
-const Taj = () => {
+const Roseate = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleThumbnailClick = (index) => {
@@ -129,4 +129,4 @@ const Taj = () => {
   );
 };
 
-export default Taj;
+export default Roseate;
