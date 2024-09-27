@@ -15,6 +15,8 @@ const Sixth = () => {
     '/logo7.jpg',
     '/logo8.jpg',
     '/logo9.jpg',
+    '/logo10.png',
+    '/logo12.jpeg',
   ];
 
   return (
