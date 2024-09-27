@@ -9,7 +9,7 @@ import VideoLoader from "../components/VideoLoader";
 
 const CompletedProjects = ({ onAllImagesLoaded }) => {
   const [imagesLoaded, setImagesLoaded] = useState(0);
-  const totalImages = 4; // Update this when more images are added
+  const totalImages = 6; // Update this when more images are added
 
   const handleImageLoad = () => {
     setImagesLoaded((prev) => prev + 1);
@@ -98,7 +98,7 @@ const CompletedProjects = ({ onAllImagesLoaded }) => {
           <div className="project-name">Auto-Lek Electric</div>
         </Link>
       </div>
-      {/* <div className="project-card">
+      <div className="project-card">
         <Link to="/project5" className="project-link">
           <img
             src="dummyProject.jpeg"
@@ -121,7 +121,7 @@ const CompletedProjects = ({ onAllImagesLoaded }) => {
           />
           <div className="project-name">postcard</div>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };

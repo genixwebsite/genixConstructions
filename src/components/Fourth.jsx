@@ -36,7 +36,7 @@ const Fourth = () => {
               <div className="text-lg md:text-2xl font-semibold text-white mt-12 md:mt-20 text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 Industrial Projects
               </div>
-              <div className="text-sm md:text-md text-white font-semibold mt-2 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
+              <div className="text-sm md:text-md text-white font-semibold mt-2 md:mt-4 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
                 GENIX Construction puts our owners requirements first when
                 assessing and proceeding. Whether scheduled during plant
                 shutdown, or performed within operational facilities, our
@@ -49,7 +49,7 @@ const Fourth = () => {
               <div className="text-lg md:text-2xl font-semibold text-white mt-12 md:mt-20 text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 Interior Fit-Outs of Offices & Residences
               </div>
-              <div className="text-sm md:text-md text-white font-semibold mt-2 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
+              <div className="text-sm md:text-md text-white font-semibold mt-2 md:mt-4 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
                 GENIX executes the Interior Fit-Out Works of house and workplace
                 with the greatest solutions. The Interior Fit-Out services
                 include floor installation, ceilings, couplings, and furnishings
@@ -74,7 +74,7 @@ const Fourth = () => {
               <div className="text-lg md:text-2xl font-semibold text-white mt-12 md:mt-20 text-center transition-opacity duration-500 delay-500 group-hover:opacity-0 group-hover:delay-0">
                 Luxury Tensile Camps
               </div>
-              <div className="text-sm md:text-md text-white font-semibold mt-2 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
+              <div className="text-sm md:text-md text-white font-semibold mt-2 md:mt-4 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
                 GENIX provide the Design and build solution of luxury tented
                 camps. Rakesh has successfully completed design and installation
                 of two tensile tented camps in Rajasthan, India from scratch to

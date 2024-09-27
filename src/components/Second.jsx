@@ -19,7 +19,7 @@ const Second = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-base md:text-xl max-w-lg md:max-w-4xl text-justify text-[#02294A]"
+            className="text-base md:text-2xl max-w-lg md:max-w-4xl text-justify text-[#02294A]"
           >
             Our Mission is to understand our client needs to deliver
             high-quality buildings on time and on budget. We will be recognised
@@ -36,7 +36,7 @@ const Second = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="text-base md:text-lg max-w-lg md:max-w-4xl text-justify text-[#02294A]"
+            className="text-semibold md:text-2xl max-w-lg md:max-w-4xl text-justify text-[#02294A]"
           >
             Expertise in estimating, construction, and project management
             ensures quality and fair pricing. Selective use of responsible

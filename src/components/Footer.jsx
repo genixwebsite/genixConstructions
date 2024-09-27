@@ -84,7 +84,11 @@ const Footer = () => {
             <span className="block text-white text-base font-bold mb-5">
               About the company
             </span>
-            We understand your vision,craft it to your specifications, and bring your dreams to life!
+            GENIX CONSTRUCTIONS is a construction and interior fit-out
+            company, which has a team of skilled professionals, who has decades
+            of experience in execution of High-End Residential Projects, Luxury
+            Tented Resorts/ Boutique Hotels, Office Fit-Out Work & Industrial
+            Projects.
           </p>
           <div className="flex justify-start items-center w-full mt-6 gap-3 text-white">
             <a href="#" target="_blank" rel="noopener noreferrer">

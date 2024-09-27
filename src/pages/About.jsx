@@ -13,22 +13,7 @@ const people = [
     image: "/person1.jpg",
     info: "Rakesh has worked over 22 years on Industrial, Hotel, Commercial & Residential Projects. His experience includes working on many large projects such as OEM Plants of Daimler & Claas India, 5 Star Hotels - Kabul Serena, Luxury Camps of SUJAN Sher Bagh & JAWAI Leopard camp, High-End Residential Projects — SUPERNOVA Noida, IVY Gurgaon. As the Managing Director, he believes that having an approachable attitude aids in the success of our employees as well as our projects.",
   },
-  {
-    id: 2,
-    name: "Arvind Chaudhary",
-    designation: "Co-Founder & Director",
-    completeInfo: "Co-Founder & Director - B-Tech & MBA (Finance & Marketing)",
-    image: "/person2.jpg",
-    info: "Arvind comes with rich experience of 18 years in Industrial Projects and different flooring solutions. He has led a flooring solutions team of Flowcrete and Cipy, and executed industrial projects for companies like Flipkart, Hair, Ahlcon, Amazon retrofitting of floors, etc. As the Co-founder, he believes that 'Quality has No explanation'.",
-  },
-  {
-    id: 3,
-    name: "Atul Bhatt",
-    designation: "GM Operations",
-    completeInfo: "GM Operations - AMICE (Civil)",
-    image: "/person3.jpg",
-    info: "Atul comes with over 20 years of experience in Industrial Projects, Interior & Office buildings, and Metro Projects. He has worked on many reputed projects like DMRC Airport line, Mahindra Plant Indore, Jubilant Roorkee, Tokia Rika Minda Bangalore, Mitsubishi Chennai, Portia India Pune, Mizuho Bank Interior Mumbai.",
-  },
+  
 ];
 
 const About = () => {
@@ -57,7 +42,7 @@ const About = () => {
 
   return (
     <div className=" overflow-x-hidden">
-      <div className="flex flex-col md:flex-row pt-28 md:pt-24 ">
+      <div className="flex flex-col md:flex-row pt-40 mt-12 md:pt-24 ">
         {/* Text Block */}
         <div className="flex-1 flex items-center justify-center p-8 lg:ml-12 mx-auto">
           <div className="  mx-auto">
