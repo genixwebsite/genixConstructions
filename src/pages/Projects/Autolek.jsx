@@ -18,15 +18,6 @@ const Autolek = () => {
       <h1 className="text-4xl font-bold py-8 text-center text-gray-800">
         Auto-Lek Electric
       </h1>
-      {/* <div
-        className="w-full h-3/4 p-12"
-        style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      > */}
       <div className="max-w-4xl mx-auto flex bg-gray-100  p-6 justify-center">
         {/* Main Carousel */}
         

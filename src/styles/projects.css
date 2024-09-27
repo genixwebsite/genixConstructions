@@ -10,7 +10,7 @@
 /* Each project card */
 .project-card {
   margin: 1rem;
-  width: calc(33.33% - 2rem);
+  width: calc(40% - 2rem);
   position: relative;
 }
 
