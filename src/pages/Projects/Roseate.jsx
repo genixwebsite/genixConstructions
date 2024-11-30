@@ -4,7 +4,7 @@ import img2 from "../../assets/projects/roseate/2.jpg";
 import img3 from "../../assets/projects/roseate/3.jpg";
 import img4 from "../../assets/projects/roseate/4.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
 
@@ -17,6 +17,9 @@ const Roseate = () => {
  const handleScrollToTop = () => {
    window.scrollTo({ top: 0, behavior: "auto" });
  };
+ useEffect(() => {
+   handleScrollToTop();
+ }, []);
   return (
     <div className="py-8 pt-40 bg-gray-100 min-h-screen md:pt-32">
       <h1 className="text-4xl font-bold py-8 text-center text-gray-800">

@@ -58,9 +58,13 @@ const Hero = () => {
 
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative text-center z-10 text-white flex flex-col items-center justify-center h-full">
-        <div className="text-center">
-          <h1 className="text-6xl font-light">Genix Constructions</h1>
-          <h2 className="text-2xl font-extralight text-gray-100">
+        <div className="text-center select-none">
+          <h1
+            className="text-4xl md:text-6xl font-light "
+          >
+            Genix Constructions
+          </h1>
+          <h2 className="text-lg md:text-2xl font-extralight text-gray-100">
             <span className="bg-[#CFA35D] px-1">
               {" "}
               You dream it, We build it!{" "}
@@ -73,10 +77,11 @@ const Hero = () => {
           )}
         </div>
         <div
-          className={`absolute bottom-16 transition-opacity duration-500 ${!showLine ? "opacity-100 delay-500" : "opacity-0"
-            }`}
+          className={`absolute bottom-16 transition-opacity duration-500 ${
+            !showLine ? "opacity-100 delay-500" : "opacity-0"
+          }`}
         >
-          <h2 className="text-xl font-bold p-2 w-96 h-24 text-white">
+          <h2 className=" text-base md:text-xl font-bold p-2 md:w-96 h-24 w-screen text-white select-none">
             {text}
           </h2>
         </div>
@@ -84,16 +89,16 @@ const Hero = () => {
       <style jsx>{`
         @keyframes lineAnimation {
           0% {
-            transform: translateY(100vh);   
+            transform: translateY(100vh);
             opacity: 1;
           }
           50% {
-            transform: translateY(0); 
+            transform: translateY(0);
             opacity: 1;
           }
           100% {
-            transform: translate(-150px, 0); 
-            opacity: 0; 
+            transform: translate(-150px, 0);
+            opacity: 0;
           }
         }
 

@@ -48,7 +48,7 @@ const MobileNavbar = () => {
     >
       <div className="flex items-center z-40">
         <Link to="/" onClick={handleScrollToTop}>
-          <img src={logo} alt="logo" className="w-24" />
+          <img src={logo} alt="logo" className="w-20" />
         </Link>
       </div>
       <button

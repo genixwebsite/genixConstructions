@@ -1,13 +1,14 @@
 import { Carousel } from "react-responsive-carousel";
-import img1 from "../../assets/projects/prateek/1.jpg";
-import img2 from "../../assets/projects/prateek/2.jpg";
-import img3 from "../../assets/projects/prateek/3.jpg";
-import img4 from "../../assets/projects/prateek/4.jpg";
+import img1 from "../../assets/projects/dlf/1.png";
+import img2 from "../../assets/projects/dlf/2.png";
+import img3 from "../../assets/projects/dlf/3.png";
+import img4 from "../../assets/projects/dlf/4.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import { useState ,useEffect} from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
-import { useState,useEffect } from "react";
-const Prateek = () => {
+
+const Dlf = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleThumbnailClick = (index) => {
@@ -22,7 +23,7 @@ const Prateek = () => {
   return (
     <div className="py-8 pt-40 bg-gray-100 min-h-screen md:pt-32">
       <h1 className="text-4xl font-bold py-8 text-center text-gray-800">
-       Prateek Edifice
+        DLF Kings Court
       </h1>
 
       {/* Carousel and Thumbnails Wrapper */}
@@ -60,7 +61,7 @@ const Prateek = () => {
               <img
                 src={img3}
                 alt="Slide 3"
-                className="object-contain w-full h-96"
+                className="object-cover w-full h-96"
                 loading="lazy"
               />
             </div>
@@ -68,7 +69,7 @@ const Prateek = () => {
               <img
                 src={img4}
                 alt="Slide 4"
-                className="object-contain w-full h-96"
+                className="object-cover w-full h-96"
                 loading="lazy"
               />
             </div>
@@ -131,4 +132,4 @@ const Prateek = () => {
   );
 };
 
-export default Prateek;
+export default Dlf;

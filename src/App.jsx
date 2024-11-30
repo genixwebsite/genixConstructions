@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Taj from "./pages/Projects/Taj";
 import Prateek from "./pages/Projects/Prateek";
 import Autolek from "./pages/Projects/Autolek";
+import Dlf from "./pages/Projects/Dlf";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,7 @@ const App = () => {
         <Route path="/projects/taj" element={<Taj />} />
         <Route path="/projects/prateek-edifice" element={<Prateek />} />
         <Route path="/projects/autolek" element={<Autolek />} />
+        <Route path="/projects/dlf" element={<Dlf/>} />
       </Routes>
       <Footer />
       {showButton && (

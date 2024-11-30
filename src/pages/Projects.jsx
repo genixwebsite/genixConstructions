@@ -5,6 +5,7 @@ import roseate from "../assets/projects/roseate/1.jpg";
 import taj from "../assets/projects/taj/1.jpg";
 import prateek from "../assets/projects/prateek/1.jpg";
 import autolek from "../assets/projects/autolek/2.jpg";
+import dlf from "../assets/projects/dlf/1.png";
 import VideoLoader from "../components/VideoLoader";
 
 const CompletedProjects = ({ onAllImagesLoaded }) => {
@@ -96,6 +97,19 @@ const CompletedProjects = ({ onAllImagesLoaded }) => {
             loading="lazy"
           />
           <div className="project-name">Auto-Lek Electric</div>
+        </Link>
+      </div>
+      <div className="project-card">
+        <Link to="/projects/dlf" className="project-link">
+          <img
+            src={dlf}
+            alt="Completed Project 4"
+            className="project-image"
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+            loading="lazy"
+          />
+          <div className="project-name">DLF Kings Court</div>
         </Link>
       </div>
       {/* <div className="project-card">
