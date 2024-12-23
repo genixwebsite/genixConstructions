@@ -39,8 +39,7 @@ const Fourth = () => {
               <div className="text-sm md:text-md text-white font-semibold mt-2 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
                 GENIX Construction puts our owners requirements first when
                 assessing and proceeding. Whether scheduled during plant
-                shutdown, or performed within operational facilities, our
-                workforce will use the best expertise to get the job done.
+                shutdown, or performed within facilities.
               </div>
             </div>
           </div>
@@ -77,8 +76,7 @@ const Fourth = () => {
               <div className="text-sm md:text-md text-white font-semibold mt-2 p-4 text-center opacity-0 group-hover:opacity-100 group-hover:delay-300 group-hover:group-focus:delay-300">
                 GENIX provide the Design and build solution of luxury tented
                 camps. Rakesh has successfully completed design and installation
-                of two tensile tented camps in Rajasthan, India from scratch to
-                the final handover to the operations team.
+                of two tensile tented camps in Rajasthan, India.
               </div>
             </div>
           </div>
