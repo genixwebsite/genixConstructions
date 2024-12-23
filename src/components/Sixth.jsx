@@ -21,7 +21,7 @@ const Sixth = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-10">
       {/* Title */}
       <h1 data-aos="fade-up" className="text-5xl text-[#02294A] font-bold mb-8">Our Clients</h1>
 
