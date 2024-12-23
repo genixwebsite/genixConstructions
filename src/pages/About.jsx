@@ -42,7 +42,7 @@ const About = () => {
 
   return (
     <div className=" overflow-x-hidden">
-      <div className="flex flex-col md:flex-row pt-40 mt-12 md:pt-24 ">
+      <div className="flex flex-col md:flex-row pt-16 mt-12 md:pt-24 ">
         {/* Text Block */}
         <div className="flex-1 flex items-center justify-center p-8 lg:ml-12 mx-auto">
           <div className="  mx-auto">
