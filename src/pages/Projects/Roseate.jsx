@@ -118,7 +118,7 @@ const Roseate = () => {
       </p>
 
       {/* Sliding Button */}
-      <div className="fixed top-2 left-4 pt-32 md:pt-28">
+      <div className="relative md:fixed top-2 md:left-4 py-6 md:py-0 md:pt-28 pl-4 md:pl-0">
         <Link
           to="/projects"
           className="inline-flex items-center px-6 py-3 font-bold text-white bg-[#CFA35D] transition-transform duration-300 hover:bg-[#9C783E]"

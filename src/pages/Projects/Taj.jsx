@@ -110,15 +110,15 @@ const Taj = () => {
       </div>
 
       <p className="mt-8 text-justify text-gray-700 text-lg max-w-6xl mx-auto px-4 md:text-center">
-        Roseate House is a luxurious retreat offering an exquisite blend of
-        modern comfort and traditional elegance. Nestled in a prime location,
-        the hotel provides guests with unparalleled hospitality and a serene
-        ambiance. Enjoy a stay that combines style, comfort, and sophistication
-        at Roseate House.
+        Taj Ambassador, Delhi is a timeless heritage hotel that seamlessly
+        blends classic colonial charm with modern luxury. Situated in the heart
+        of Delhi, it offers guests an immersive experience of the city's rich
+        history and vibrant culture. Enjoy a stay that epitomizes elegance,
+        comfort, and impeccable hospitality at Taj Ambassador, Delhi.
       </p>
 
       {/* Sliding Button */}
-      <div className="fixed top-2 left-4 pt-32 md:pt-28">
+      <div className="relative md:fixed top-2 md:left-4 py-6 md:py-0 md:pt-28 pl-4 md:pl-0">
         <Link
           to="/projects"
           className="inline-flex items-center px-6 py-3 font-bold text-white bg-[#CFA35D] transition-transform duration-300 hover:bg-[#9C783E]"

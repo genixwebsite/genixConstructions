@@ -22,7 +22,7 @@ const Prateek = () => {
   return (
     <div className="py-8 pt-40 bg-gray-100 min-h-screen md:pt-32">
       <h1 className="text-4xl font-bold py-8 text-center text-gray-800">
-       Prateek Edifice
+        Prateek Edifice
       </h1>
 
       {/* Carousel and Thumbnails Wrapper */}
@@ -109,15 +109,15 @@ const Prateek = () => {
       </div>
 
       <p className="mt-8 text-justify text-gray-700 text-lg max-w-6xl mx-auto px-4 md:text-center">
-        Roseate House is a luxurious retreat offering an exquisite blend of
-        modern comfort and traditional elegance. Nestled in a prime location,
-        the hotel provides guests with unparalleled hospitality and a serene
-        ambiance. Enjoy a stay that combines style, comfort, and sophistication
-        at Roseate House.
+        Prateek Edifice, Noida is a premium residential project that sets a
+        benchmark for luxurious living. Located in a prime area of Noida, this
+        modern architectural marvel offers spacious homes with state-of-the-art
+        amenities. Experience the perfect harmony of style, comfort, and
+        sophistication at Prateek Edifice, Noida.
       </p>
 
       {/* Sliding Button */}
-      <div className="fixed top-2 left-4 pt-32 md:pt-28">
+      <div className="relative md:fixed top-2 md:left-4 py-6 md:py-0 md:pt-28 pl-4 md:pl-0">
         <Link
           to="/projects"
           className="inline-flex items-center px-6 py-3 font-bold text-white bg-[#CFA35D] transition-transform duration-300 hover:bg-[#9C783E]"

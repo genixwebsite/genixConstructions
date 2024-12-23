@@ -12,6 +12,7 @@ import Taj from "./pages/Projects/Taj";
 import Prateek from "./pages/Projects/Prateek";
 import Autolek from "./pages/Projects/Autolek";
 import Dlf from "./pages/Projects/Dlf";
+import MobileFooter from "./components/MobileFooter";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -56,9 +57,15 @@ const App = () => {
         <Route path="/projects/taj" element={<Taj />} />
         <Route path="/projects/prateek-edifice" element={<Prateek />} />
         <Route path="/projects/autolek" element={<Autolek />} />
-        <Route path="/projects/dlf" element={<Dlf/>} />
+        <Route path="/projects/dlf" element={<Dlf />} />
       </Routes>
-      <Footer />
+      <div className="hidden md:flex">
+        <Footer />
+      </div>
+      <div className="md:hidden flex">
+        <MobileFooter/>
+      </div>
+
       {showButton && (
         <button
           onClick={scrollToTop}
