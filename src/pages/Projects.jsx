@@ -4,7 +4,7 @@ import "../styles/projects.css";
 import roseate from "../assets/projects/roseate/1.jpg";
 import taj from "../assets/projects/taj/1.jpg";
 import prateek from "../assets/projects/prateek/1.jpg";
-import autolek from "../assets/projects/autolek/2.jpg";
+import autolek from "../assets/projects/autolek/1.jpeg";
 import dlf from "../assets/projects/dlf/1.png";
 import VideoLoader from "../components/VideoLoader";
 
@@ -96,7 +96,7 @@ const CompletedProjects = ({ onAllImagesLoaded }) => {
             onError={handleImageError}
             loading="lazy"
           />
-          <div className="project-name">Auto-Lek Electric</div>
+          <div className="project-name">Auto-Lek Electric (Supa)</div>
         </Link>
       </div>
       <div className="project-card">
@@ -109,7 +109,7 @@ const CompletedProjects = ({ onAllImagesLoaded }) => {
             onError={handleImageError}
             loading="lazy"
           />
-          <div className="project-name">DLF Kings Court</div>
+          <div className="project-name">D-15, Sector 39, Noida</div>
         </Link>
       </div>
       {/* <div className="project-card">
